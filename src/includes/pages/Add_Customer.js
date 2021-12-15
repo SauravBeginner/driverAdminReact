@@ -113,7 +113,7 @@ const Add_Customer = () => {
                       </div>
                     </div>
                     <button
-                      type="submit"
+                      type="button"
                       className="btn btn-primary btn-user btn-block"
                       onClick={async () => {
                         var fd = new FormData();
@@ -134,8 +134,10 @@ const Add_Customer = () => {
                         var data = await result.json();
                         console.log(result);
                         if (data.err == "Invalid") {
+                          setIsCorrect(false);
                           setIsErr(true);
                         } else {
+                          setIsErr(false);
                           setIsCorrect(true);
                         }
                       }}
