@@ -4,7 +4,7 @@ const Customer_List = () => {
   let [driver, setDriver] = useState([]);
 
   const getData = async () => {
-    var resp = await fetch("http://localhost:5000/driver/dlist");
+    var resp = await fetch("http://driveradminnode.herokuapp.com/driver/dlist");
     var result = await resp.json();
     setDriver(result);
   };
