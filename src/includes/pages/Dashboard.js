@@ -5,13 +5,17 @@ const Dashboard = () => {
   const [customer, setCustomer] = useState([]);
   const [driver, setDriver] = useState([]);
   const getDriverData = async () => {
-    var driverResp = await fetch("http://localhost:5000/driver/dtotal");
+    var driverResp = await fetch(
+      "https://driveradminnode.herokuapp.com/driver/dtotal"
+    );
     var dirverData = await driverResp.json();
 
     setDriver(dirverData);
   };
   const getCustomerData = async () => {
-    var customerResp = await fetch("http://localhost:5000/customer/ctotal");
+    var customerResp = await fetch(
+      "https://driveradminnode.herokuapp.com/customer/ctotal"
+    );
     var customerData = await customerResp.json();
 
     setCustomer(customerData);
