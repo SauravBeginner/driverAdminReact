@@ -187,7 +187,7 @@ const Add_Driver = () => {
                       console.log(result);
                     }}
                   >
-                    Register Customer
+                    Register Driver
                   </button>
                   <hr />
                   <Link to="" className="btn btn-google btn-user btn-block">
