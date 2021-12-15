@@ -61,9 +61,6 @@ const Customer_List = () => {
                         <button className="btn btn-sm btn-primary mx-1">
                           View
                         </button>
-                        <button className="btn btn-sm btn-warning mx-1">
-                          Edit
-                        </button>
                         <button className="btn btn-sm btn-success mx-1">
                           Booking
                         </button>
