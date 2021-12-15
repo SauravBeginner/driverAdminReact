@@ -4,7 +4,9 @@ const Customer_List = () => {
   let [customer, setCustomer] = useState([]);
 
   const getData = async () => {
-    var resp = await fetch("http://localhost:5000/customer/clist");
+    var resp = await fetch(
+      "https://driveradminnode.herokuapp.com/customer/clist"
+    );
     var result = await resp.json();
     setCustomer(result);
   };
