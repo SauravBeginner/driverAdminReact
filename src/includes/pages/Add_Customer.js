@@ -106,7 +106,7 @@ const Add_Customer = () => {
                       fd.append("cpassword", cpassword);
 
                       var result = await fetch(
-                        "http://localhost:5000/customer/cadd",
+                        "https://driveradminnode.herokuapp.com/customer/cadd",
                         {
                           method: "POST",
                           body: fd,

@@ -177,7 +177,7 @@ const Add_Driver = () => {
                       fd.append("kyc", kyc);
 
                       var result = await fetch(
-                        "http://localhost:5000/driver/dadd",
+                        "https://driveradminnode.herokuapp.com/driver/dadd",
                         {
                           method: "POST",
                           body: fd,
